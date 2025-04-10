@@ -1,0 +1,331 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* color: black; */
+    font-family: Arial, Helvetica, sans-serif;
+    transition: all 0.3s ease-in-out;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+
+/* -------------------------------------------------------------------------------------------------- */
+/* scroll to top arrow .......... */
+.moveup{
+    height: 40px;
+    width: 40px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background-color: rgb(113, 218, 113);
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 10px;
+    visibility: hidden;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: all 1s ease-in-out;
+}
+
+
+/* Header Styling *************************************** */
+/* ----- Navbar Styling ------  */
+nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 15px 20px;
+    /* position: fixed;
+    top: 0;
+    z-index: 99; */
+    background-color: white;
+}
+
+.menu-items{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    font-weight: 530;
+}
+.items:hover{
+    color: rgb(113, 218, 113);
+}
+.menu-items>li{
+    list-style: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.menu-items li a{
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.icons{
+    display: flex;
+    margin-left: 50px;
+    gap: 30px;
+}
+#fvrt, #cart{
+    font-size: 1.8rem;
+    position: relative;   
+    padding: 5px;
+    cursor: pointer;
+}
+#counts{
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: small;
+    background-color: rgb(113, 218, 113);
+    height: 17px;
+    width: 17px;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.register{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+.btn{
+    height: 45px;
+    width: 100px;
+    text-align: center;
+    border-radius: 25px;
+    font-weight: bold;
+    outline: none;
+    font-weight: 30px;
+    cursor: pointer;
+}
+#login{
+    color: white;
+    background-color: rgb(113, 218, 113);
+    border: none;
+}
+#login:hover{
+    background-color: navy;
+}
+#signup{
+    border: 1px solid rgb(191, 189, 189);
+    background-color: transparent;
+}
+#signup:hover{
+    color: white;
+    background-color: rgb(113, 218, 113);
+    border: none;
+}
+
+/* -------------------------------------------------------------------------------------- */
+
+/* Main styling ************* */
+/* _________________________ */
+.banner{
+    height: 750px;
+    width: 100%;
+    background-color: rgb(253, 253, 250);
+    position: relative;
+    overflow: hidden;
+}
+#img1{
+    width: 110%;
+    object-fit: cover;
+    object-position: center;
+}
+#img2{
+    width: 560px;
+    position: absolute;
+    bottom: 0;
+    left: 55%;
+    z-index: 1;
+}
+
+
+.banner-text{
+    width: 45%;
+    position: absolute;
+    top: 0;
+    margin-top: 15%;
+    margin-left: 80px;
+}
+.banner-text h1{
+    font-size: 5rem;
+    color: rgb(15, 15, 69);
+}
+.banner-text p{
+    font-size: 16px;
+    margin: 30px 0;
+    line-height: 1.5;
+    color: rgb(151, 138, 138);
+}
+.banner-text button{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-wrap: nowrap;
+    text-align: center;
+    height: 50px;
+    width: 50px;
+    font-size: medium;
+    padding: 15px 18px;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+}
+.banner-text button:hover{
+    color: white;
+    width: 190px;
+    background-color: rgb(113, 218, 113);
+    #exp-icon{
+        color: white;
+    }
+}
+
+/* ______________________ */
+
+
+
+
+
+/* ----------------------------------------------------------------------------------------- */
+
+/* Footer Styling *************** */
+.f-dets{
+    height: 450px;
+    width: 100%;
+    color: white;
+    background-color: #1a2d62;
+    padding: 90px;
+    display: flex;
+    align-items: top;
+    justify-content: space-evenly;
+    gap: 80px;
+    border-bottom: 0.5px solid rgb(212, 210, 210);
+}
+
+.dets-box{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 0 10px;
+}
+
+/* *********** */
+#for-supp{
+    width: 220px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+#for-supp img{
+    color: rgb(128, 214, 128);
+    width: 150px;
+    filter: invert(1);
+}
+#for-supp p{
+    font-size: 16px;
+    line-height: 1.5;
+}
+#dets1-icon{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+}
+.fb, .inst, .tw{
+    font-size: 1.3rem;
+    color: white;
+}
+
+
+
+/* *********** */
+.dets-items{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+.dets-items li{
+    font-size: 17px;
+    color: rgb(227, 224, 224);
+    cursor: pointer;
+}
+.dets-items li:hover{
+    color:rgb(128, 214, 128);
+}
+
+
+
+/* ************** */
+.contact-items{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    font-size: 1.1rem;
+}
+.contact-items li{
+    line-height: 25px;
+}
+
+
+/* ----------------------- */
+
+.f-end{
+    background-color: #1a2d62;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px; 
+    color: white;
+    font-size: 15px;
+}
+
+#end-txt{
+    font-family: monospace;   
+}
+
+.end-items{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    list-style: none;
+}
+.end-items li{
+    cursor: pointer;
+    font-family: monospace; 
+    position: relative;
+}
+.end-items li::after{
+    content: "";
+    height: 0.5px;
+    width: 100%;
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.end-items li:hover{
+    color: rgb(128, 214, 128);
+    font-family: monospace; 
+}
+
+/* ---------------------------------------------------------------------------------------------------- */

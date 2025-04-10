@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login - Penn</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="register.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <img src="assets\logo.png" alt="Penn" id="logo" width="150px" />
+
+        <ul class="menu-items">
+          <li>
+            <a href="homepage.html" class="items">Home</a>
+            <span><i class="fa-solid fa-caret-down"></i></span>
+          </li>
+          <li>
+            <a href="homepage.html" class="items">Pages</a>
+            <span><i class="fa-solid fa-caret-down"></i></span>
+          </li>
+          <li>
+            <a href="homepage.html" class="items">Courses</a>
+            <span><i class="fa-solid fa-caret-down"></i></span>
+          </li>
+          <li>
+            <a href="homepage.html" class="items">Shop</a>
+            <span><i class="fa-solid fa-caret-down"></i></span>
+          </li>
+          <li>
+            <a href="homepage.html" class="items">Blog</a>
+            <span><i class="fa-solid fa-caret-down"></i></span>
+          </li>
+          <li>
+            <a href="homepage.html" class="items">Contact</a>
+          </li>
+        </ul>
+
+        <div class="icons">
+          <div id="fvrt">
+            <i class="fa-regular fa-heart"></i>
+            <span id="counts">0</span>
+          </div>
+          <div id="cart">
+            <i class="fa-solid fa-cart-flatbed-suitcase"></i>
+            <span id="counts">2</span>
+          </div>
+        </div>
+
+        <div class="register">
+          <button
+            onclick="document.location='login.html' "
+            class="btn"
+            id="login"
+          >
+            Login
+          </button>
+          <button
+            onclick="document.location='signup.html' "
+            class="btn"
+            id="signup"
+          >
+            Sign Up
+          </button>
+        </div>
+      </nav>
+
+      <div class="title-box">
+        <h1 id="title">Login Page</h1>
+        <div id="box">
+          <a href="homepage.html">Home</a>
+          <span>/</span>
+          <span>Login Page</span>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="form-container">
+        <form action="">
+          <h1 id="f-heading">Already A Member? Sign In:</h1>
+
+          <div class="txtbox">
+            <label for="username">Username</label>
+            <input type="text" id="txtname" name="txtname" />
+          </div>
+
+          <div class="txtbox">
+            <label for="password">Password</label>
+            <input type="password" id="txtpass" name="txtpass" />
+          </div>
+          <button id="f-btn">Login</button>
+
+          <div id="f-text">
+            <p>Don't have an account?</p>
+            <a href="signup.html">Reister Now</a>
+          </div>
+        </form>
+      </div>
+    </main>
+
+    <footer>
+        <div class="f-dets">
+            <div class="dets-box" id="for-supp">
+                <img src="assets/logo.png" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores quas consequuntur, quisquam incidunt eum laudantium eligendi.</p>
+                <ul id="dets1-icon">
+                    <li><a href=""><i class="inst fa-brands fa-instagram"></i></a></li>
+                    <li><a href=""><i class="tw fa-brands fa-x-twitter"></i></a></li>
+                    <li><a href=""><i class="fb fa-brands fa-facebook-f"></i></a></li>
+                </ul>
+            </div>
+
+
+            <div class="dets-box for-info">
+                <h2>Courses</h2>
+
+                <ul class="dets-items">
+                    <li>Creative Writing</li>
+                    <li>Digital Marketing</li>
+                    <li>SEO Business</li>
+                    <li>Social Marketing</li>
+                    <li>Graphic Design</li>
+                    <li>Website Development</li>
+                </ul>
+            </div>
+
+
+
+            <div class="dets-box for-info">
+                <h2>Company</h2>
+
+                <ul class="dets-items">
+                    <li>About Us</li>
+                    <li>Knowledge Base</li> 
+                    <li>Affiliate Program</li>
+                    <li>Community</li>
+                    <li>Market API</li>
+                    <li>Support Team</li>
+                </ul>
+            </div>
+
+
+
+            <div class="dets-box" id="for-contact">
+                <h2>Contact Info</h2>
+
+                <ul class="contact-items">
+                    <li>Phone Number <br> <span style="color: rgb(128, 214, 128); font-size: 15px;">+92 340 5784987</span></li>
+                    <li>Email Address <br> <span style="color: rgb(128, 214, 128); font-size: 15px;">example@gmail.com</span></li>
+                    <li>Office Address <br> <span style="color: rgb(128, 214, 128); font-size: 15px;">Sargodha, District, Pakistan</span></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="f-end">
+          <p id="end-txt">
+            <i class="fa-regular fa-copyright"></i>
+            All Rights Reserved.
+          </p>
+          <ul class="end-items">
+            <li>Terms of use</li>
+            <li>Privacy Policy</li>
+            <li>Cookies</li>
+          </ul>
+        </div>
+    </footer>
+  </body>
+</html>
