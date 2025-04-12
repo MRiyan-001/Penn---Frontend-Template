@@ -1,0 +1,216 @@
+.about-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.abinfo {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 40px 70px;
+}
+.info2 {
+  border-left: 0.5px solid rgb(197, 194, 189);
+  border-right: 0.5px solid rgb(197, 194, 189);
+}
+.abinfo p {
+  color: rgb(151, 138, 138);
+  font-size: 16px;
+}
+.abinfo button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-wrap: nowrap;
+  text-align: center;
+  height: 50px;
+  width: 50px;
+  font-size: medium;
+  padding: 15px 18px;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+}
+.abinfo button:hover {
+  color: white;
+  width: 120px;
+  background-color: rgb(113, 218, 113);
+  #exp-icon {
+    color: white;
+  }
+}
+
+/* ------------------------------------------------------------------------ */
+/*  About- Dets *** styling ____________________ */
+
+.about-dets {
+  background-color: rgb(237, 231, 231);
+  padding: 50px 80px;
+}
+
+/* All Section Common Styling ________  */
+.dets-descr {
+  font-size: 15px;
+  font-weight: bold;
+  font-family: monospace;
+  color: rgb(89, 173, 89);
+}
+.dets-heading {
+  color: rgb(54, 54, 105);
+  font-size: 2.4rem;
+}
+.dets-heading > span {
+  text-decoration: underline;
+  color: rgb(89, 173, 89);
+}
+
+
+
+/* ****** Section 1  ***** */
+.dets-sect1 {
+  display: flex;
+  align-items: center;
+  gap: 70px;
+  margin: 100px 0;
+}
+#sect1-img img {
+  width: 450px;
+}
+
+#sect1-txt {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+#sect1-txt h1 {
+  font-size: 3rem;
+  font-weight: 550;
+  color: rgb(54, 54, 105);
+}
+#sect1-txt h1 > span {
+  text-decoration: underline;
+  color: rgb(113, 218, 113);
+}
+#sect1-txt p {
+  color: rgb(151, 138, 138);
+  font-size: 16px;
+  line-height: 1.5;
+}
+#sect1-txt button {
+  color: white;
+  background-color: rgb(79, 174, 79);
+  text-align: center;
+  height: 45px;
+  width: fit-content;
+  font-size: medium;
+  font-weight: 540;
+  padding: 10px 18px;
+  border-radius: 25px;
+  cursor: pointer;
+  border: none;
+}
+#sect1-txt button:hover {
+  background-color: navy;
+}
+
+
+
+/* ****** Section 2  ***** */
+.dets-sect2 {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin: 100px 0;
+}
+
+
+.sect2-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 40px 0;
+  padding: 20px 0;
+  gap: 20px;
+}
+
+.dbox {
+  height: 180px;
+  width: 320px;
+  border: 1px solid rgb(197, 194, 189);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
+  padding: 30px;
+  border-radius: 10px;
+  background-color: rgb(243, 237, 237);
+}
+.dbox:hover {
+  transform: translate(0, -6px);
+}
+.dbox p {
+  color: rgb(151, 138, 138);
+}
+
+
+/* ****** Section 3  ***** */
+.dets-sect3{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin: 100px 0;
+}
+
+
+.dets-faqs{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 60px;
+}
+.faq-boxes{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.faq{
+  /* height: auto; */
+  height: 60px;
+  width: 550px;
+  overflow: hidden;
+  background-color: #fff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  border: 1px solid rgb(197, 194, 189);
+  border-radius: 8pxpx;
+}
+.faq #q{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 18px;
+  font-weight: 540;
+}
+.faq #q button{
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  font-size: 16px;
+  outline: none;
+}
+.faq #q button:focus{
+  transform: rotate(180deg); 
+}
+
+
+/* faq image styling ________ */
+.faq-img img{
+  width: 450px;
+}
